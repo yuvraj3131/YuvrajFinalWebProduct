@@ -37,11 +37,23 @@ if (loading) return <p>Loading...</p>
 
   return (
 
-    <div style ={{padding :"20px"}}>
-      <h1>Product Management</h1>
+    <div style ={{padding :"20px",fontFamily:"monospace"}}>
+
+      <h1 style ={{marginBottom :"40px",fontFamily:"monospace"}}>Product Management</h1>
+
       <ProductTable products={products} onDelete={handleDelete}/>
-      <div style ={{padding:"10px"}}>
-      <h3>Grand Total :${grandTotal}</h3>
+
+
+      <div style ={{padding:"10px",
+      marginBottom :"40px",
+      fontFamily:"monospace",
+      borderRadius:"8px",
+      backgroundColor:"beige"
+      }}>
+
+      <h3
+      style ={{marginBottom:"10px",fontFamily:"monospace"}}>
+        Grand Total :${grandTotal}</h3>
       <p>Note: discounted is green</p>
       <p>Tax 13% applied after discount </p>
       </div>
